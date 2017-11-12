@@ -1,0 +1,13 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.algo-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.spacing {
+  width: 40px;
+}
