@@ -14,42 +14,50 @@
     <div class="algo-container">
       <div class="algo-options">
           <h3>Options</h3>
-          <ul class="options-list">
-            <li>
-              <p>
-                Algorithm:
-              </p>
-              <input type="text">
-            </li>
-            <li>
-              <p>
-                Size:
-              </p>
-              <input type="text">
-            </li>
-            <li>
-              <p>
-                Delay:
-              </p>
-              <input type="text">
-            </li>
-          </ul>
+          <form id="algo-form">
+            <ul class="options-list">
+              <li>
+                <p>
+                  Algorithm:
+                </p>
+                <select name="" id="algo">
+                  <option value="bubble-sort" selected>Bubble Sort</option>
+                  <option value="merge-sort">Merge Sort</option>
+                </select>
+              </li>
+              <li>
+                <p>
+                  Size:
+                </p>
+                <div id="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="size">
+                </div>
+              </li>
+              <li>
+                <p>
+                  Delay:
+                </p>
+                <input id="delay" type="text">
+              </li>
+            </ul>
+          </form>
       </div>
       <div class="spacing"></div>
-      <div class="bars">
+      <div class="bars" id="bar-container">
           <h3>Bars</h3>
       </div>
     </div>
     <div class="function-buttons">
-      <button>
+      <button id="sort">
         SORT
       </button>
-      <button>
+      <button id="pause">
         PAUSE
       </button>
-      <button>
+      <button id="reset">
         RESET
       </button>
     </div>
+    <script src="example.js"></script>
   </body>
 </html>
