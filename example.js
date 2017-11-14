@@ -4,6 +4,7 @@ let currentState = {
   delay: null
 };
 
+buildBars(currentState.size, randomSet(currentState.size));
 
 // Selectors
 const algo = document.getElementById('algo');
